@@ -1,0 +1,69 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+main{
+    position: relative;
+    overflow: hidden;
+}
+div{
+    &.intro-bg{
+        @include img-pos(-14%,-45%,1);
+        width: 100%;
+        height: 80rem;
+        background: url("/images/bg-intro-desktop.svg") no-repeat;
+    }
+    &.intro-mockup{
+        @include img-pos(-7%,-58%,2);
+        width: 100%;
+        height: 80rem;
+        background: url("/images/image-mockups.png") no-repeat;
+    }
+}
+.cards-container{
+    width: 100%;
+    @include flexbox(flex-start,flex-start,row);
+    gap: 0 1rem;
+}
+
+section.intro{
+    position: relative;
+    .intro-content{
+        padding: 13% 0 13rem 10%;
+        width: 38%;
+        h1{
+            position: relative;
+            z-index: 10;
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+        p{
+            @include para-props;
+        }
+    }
+
+}
+
+section.services{
+    height: fit-content;
+    background-color: $section-bgcolor-alt;
+    .services-content{
+        padding: 5rem 0 1rem 8rem;
+        h1{
+            @include section-heading;
+        }
+        p{
+            @include para-props;
+        }
+    }
+}
+
+section.articles{
+    height: fit-content;
+    .articles-content{
+        padding: 5rem 0 1rem 8rem;
+        h1{
+            @include section-heading;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@mixin flexbox($justify , $align , $dir){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow:  $dir nowrap;
+}
+
+@mixin img-pos($top,$right,$z){
+    position: absolute ;
+    top: $top;
+    right: $right;
+    z-index: $z;
+}
+@mixin para-props(){
+    position: relative;
+    z-index: 10;
+    font-size: $para-font-size;
+    color : $para-text-color;
+    margin-bottom: 2rem;
+}
+
+@mixin section-heading(){
+    font-size: $section-heading-size;
+    color: $heading-small-color;
+    font-weight: 400;
+}

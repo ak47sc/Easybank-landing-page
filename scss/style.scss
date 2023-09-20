@@ -1,0 +1,12 @@
+@import "../scss/utilities/variables";
+@import "../scss/components/buttons";
+@import "../scss/components/card";
+@import "../scss/layout/header";
+@import "../scss/layout/main";
+@import "../scss/layout/footer";
+@import "../scss/layout/responsive-s";
+
+*{
+    box-sizing: border-box;
+    font-family: $main-font , Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

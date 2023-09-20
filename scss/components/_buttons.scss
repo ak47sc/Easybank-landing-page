@@ -1,0 +1,12 @@
+.action{
+    color: white;
+    background: $button-gradient;
+    border-radius: 30px;
+    outline: 0;
+    border: 0;
+    width: 10rem;
+    height: 2.5rem;
+}
+.action:hover{
+    background: linear-gradient(90deg, rgb(109, 255, 136) 0%, rgb(94, 236, 255) 100%);;
+}

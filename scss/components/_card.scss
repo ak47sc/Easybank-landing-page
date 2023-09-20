@@ -1,0 +1,41 @@
+@import "../utilities/mixins";
+.card{
+    width:20%;
+    @include flexbox(center , flex-start , column);
+    h2{
+        font-weight: 400;
+    }
+    p{
+        @include para-props;
+    }
+}
+
+.card-articles{
+    width:20%;
+    @include flexbox(flex-start , flex-start , column);
+    img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        border-radius: 5px 5px 0 0;
+    }
+    .articles-text{
+        padding: 1rem 10% 10% 10%;
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-size: smaller;
+            color: $para-text-color;
+        }
+        h4{
+            font-weight: 400;
+            color: $heading-small-color;
+            &:hover{
+                color: green;
+            }
+        }
+        h6{
+            color: $para-text-color;
+        }
+    }
+}

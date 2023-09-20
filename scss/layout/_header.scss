@@ -1,0 +1,52 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.hidden{
+    opacity: 0 !important;
+}
+header{
+    nav{
+        @include flexbox(space-around , center , row);
+        background-color: $nav-bg-color;
+        transition: 0.2s ease;
+        .toggle{
+            position: absolute;
+            display: none;
+            right: 10%;
+            top: 4%;
+        }
+        .toggle-img{
+            position: absolute;
+            opacity: 100;
+            transition: opacity 0.5s ease;
+        }
+        &.toggle-active{
+            height: 22rem;
+        }
+    }
+    .nav-links{
+        list-style: none;
+        @include flexbox(center , center , row);
+        gap: 2rem 2rem;
+        a{
+            position: relative;
+            color: rgb(151, 151, 151);
+            text-decoration: none;
+        }
+        li{
+            position: relative;
+        }
+        li:hover {
+            &::after{
+                content: "";
+                width: 100%;
+                display: block;
+                position: absolute;
+                height: 0.2rem;
+                background: $button-gradient;
+                z-index: 50;
+                bottom: -85%;
+            }
+        }
+    }
+}

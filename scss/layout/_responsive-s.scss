@@ -1,0 +1,142 @@
+@media screen and (max-width:500px) {
+    .cards-container{
+        width: 100%;
+        @include flexbox(center , center , column);
+        gap: 0 1rem;
+    }
+
+    .card{
+        width:90%;
+        @include flexbox(center , center , column);
+    }
+
+    .card-articles{
+        text-align: left;
+        width:90%;
+        @include flexbox(flex-start , flex-start , column);
+        .articles-text{
+            padding: 1rem 1rem 5rem 1rem;
+        }
+    }
+
+    div{
+        &.intro-bg{
+            top: -1.5%;
+            left: 0;
+            background: url("/images/bg-intro-mobile.svg") no-repeat;
+            background-size: contain;
+        }
+        &.intro-mockup{
+            top: -2.2%;
+            left: 0;
+            background-size: contain;
+        }
+    }
+    
+    header{
+        nav{
+            height: 3.1rem;
+            width: 100%;
+            overflow: hidden;
+            @include flexbox(flex-start , flex-start , column);
+            .logo{
+                padding:0.6rem 0 0.2rem 1.5rem;
+            }
+            .nav-links{
+                align-self: center;
+                padding: 0;
+                @include flexbox(center , center , column);
+                gap: 2rem 0;
+            }
+            button{
+                align-self: center;
+                margin-top: 1rem;
+            }
+            .toggle{
+                @include flexbox(center , center , row);
+            }
+        } 
+    }
+
+    main{
+        section.intro{
+            @include flexbox(center , center , column);
+            .intro-content{
+                width: 85%;
+                text-align: center;
+                padding: 100% 0 8rem 0;
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        section.services{
+            @include flexbox(center , center , column);
+            .services-content{
+                width: 85%;
+                text-align: center;
+                padding: 0;
+                h1{
+                    font-size: 2rem;
+                    padding : 1rem 2rem 0 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        section.articles{
+            @include flexbox(center , center , column);
+            .articles-content{
+                width: 85%;
+                text-align: center;
+                padding: 0;
+                h1{
+                    font-size: 2rem;
+                    padding : 5rem 2rem 0 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+
+            }
+        }
+    }
+
+    footer{
+        nav{
+            height: 40rem;
+            @include flexbox(center , center , column);
+            gap:0;
+            .first{
+                @include flexbox(flex-start , center , column);
+                gap:0;
+            }
+            .nav-links{
+                padding: 0;
+                margin: 0;
+                @include flexbox(center , center , column);
+                gap: 0;
+                li{
+                    margin: 0.5rem 0 1rem 0;
+                }
+            }
+            .copyright{
+                text-align: center;
+                margin-top: 2.5rem;
+            }
+            .footer-nav-icons{
+                .social-icons{
+                    img{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
