@@ -128,7 +128,7 @@ div.intro-bg {
   z-index: 1;
   width: 100%;
   height: 80rem;
-  background: url("images/bg-intro-desktop.svg") no-repeat;
+  background: url("https://github.com/ak47sc/Easybank-landing-page/blob/main/images/bg-intro-desktop.svg") no-repeat;
 }
 div.intro-mockup {
   position: absolute;
