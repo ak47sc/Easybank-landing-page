@@ -290,7 +290,7 @@ footer nav .copyright {
   div.intro-bg {
     top: -1.5%;
     left: 0;
-    background: url("/images/bg-intro-mobile.svg") no-repeat;
+    background: url("images/bg-intro-mobile.svg") no-repeat;
     background-size: contain;
   }
   div.intro-mockup {
